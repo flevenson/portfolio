@@ -9,9 +9,14 @@ export default function Home() {
       </Head>
 
       <main>
+        working
       </main>
 
       <style jsx>{`
+
+      main {
+        font-family: 'Righteous', cursive;
+      }
       `}</style>
     </div>
   )
