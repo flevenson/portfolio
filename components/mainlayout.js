@@ -79,7 +79,7 @@ export default function MainLayout() {
                 font-weight: 600;
                 font-size: 1.3rem;
                 color: #FE9892;
-
+                cursor: pointer;
             }
 
         `}</style>

@@ -10,13 +10,38 @@ export default function Home() {
       </Head>
       <MainLayout />
       <main>
-        <div className='main-blurb'>
-          <p>Hello and welcome to my portfolio site. I am a Front End Web Developer and Designer and love using my creativity to bring an idea to life. I recently started Over Easy Web Solutions, a company focused on Full Stack Website development and design. This website is here to give you an introduction to me and to show you some of my work. </p>
-          <p>Beyond software development I am a live music fanatic, vinyl collector, and artist. I recently started teaching myself yoga and guitar and have been loving the new creative outlets. I bike everywhere I go and really enjoy the excercise, fresh air, and being outside so much. I've been living in Colorado for 9 years after moving from New York and found it hard to leave. </p>
-          <p>Thanks for checking out my website, I'd love the opportunity to work together and bring your idea out into the world. Please check out my projects and feel free to reach out anytime if you have an idea or project you'd like my help with.</p>
+        <div className='main-section'>
+          <div className='blurb'>
+            <p>Welcome to my portfolio site. I am a developer residing in Denver, CO specializing in Front End website development. Coming from a background in Fine Art I have found software engineering to be a fulfilling outlet for my creativity, giving me an endless canvas to bring my ideas to life. My background gives me both a keen eye for design and an ability to think outside the box when searching for solutions.</p>
+            <p>I enjoy using my skills to help others and look forward to new opportunities to collaborate. I'm always looking for a project to sink my teeth into so please reach out on my contact page if you have a project I can help with. Check out the portfolio tab to see some examples of past projects I've worked on. Thanks for visiting!</p>
+          </div>
+          <img className='denver' src='denver-skyline-2.jpeg' />
         </div>
-        <div className='pic-holder'>
-          <img className='freddie-pic' src='freddiePic.png' />
+        <div className='icon-holder'>
+          <div className='i-use'>
+            <p>Tools I Use</p>
+            <div className='icons'>
+              <img src='react.svg' />
+              <img src='redux.svg' />
+              <img src='css3.svg' />
+              <img src='html-5.svg' />
+              <img src='nodejs.svg' />
+              <img src='github.svg' />
+              <img src='postgresql.svg' />
+              <img src='figma.svg' />
+            </div>
+          </div>
+          <div className='learning'>
+            <p>Tools I am Learning</p>
+            <div className='icons'>
+              <img src='angularjs.svg' />
+              <img src='amazon-web-services.svg' />
+              <img src='vue-js.svg' />
+              <img src='svelte.svg' />
+              <img src='typescript.svg' />
+              <img src='sass.svg' />
+            </div>
+          </div>
         </div>
       </main>
 
@@ -25,27 +50,77 @@ export default function Home() {
       main {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-      }
-
-      .main-blurb, .pic-holder {
-        width: 50vw;
-        height: 80vh;
-        display: flex;
-        align-items: center;
         justify-content: center;
       }
 
-      .main-blurb {
+      .main-section {
+        width: 70vw;
+        height: 89.5vh;
+        display: flex;
+        flex-directon: column;
+        align-items: center;
         font-family: 'Raleway', sans-serif;
         color: #7B3031;
         font-weight: 600;
         font-size: 1.3rem;
-        padding-left: 40px;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
       }
 
+      .blurb {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px;
+        line-height: 1.6rem;
+      }
+
+      .denver {
+        width: 100%;
+      }
+
+      .icon-holder {
+        display: flex;
+        background-color: #7B3031;
+        width: 30vw;
+        height: 89.5vh;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        justify-content: space-around;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+      }
+
+      .i-use, .learning {
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .i-use p, .learning p {
+        color: #FFE279;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+      }
+
+      .learning .icons {
+        width: 85%;
+      }
+
+      .icons img {
+        height: 80px;
+        padding: 5px;
+      }
 
       .freddie-pic {
         border: 4px solid #07A5FF;
