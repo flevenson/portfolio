@@ -7,4 +7,4 @@ https://trello.com/b/gl4nv3kU/portfolio-site
 
 ## View a deployed version of the project here
 
-https://portfolio-neon-seven.now.sh/
+https://freddielevenson.now.sh
