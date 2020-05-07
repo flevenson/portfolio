@@ -3,3 +3,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Trello board for tracking tasks
 
 https://trello.com/b/gl4nv3kU/portfolio-site
+
+
+## View a deployed version of the project here
+
+https://portfolio-neon-seven.now.sh/
