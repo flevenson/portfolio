@@ -8,3 +8,9 @@ https://trello.com/b/gl4nv3kU/portfolio-site
 ## View a deployed version of the project here
 
 https://freddielevenson.now.sh
+
+## Technologies Used
+
+-next.js
+
+-now (deployment)
