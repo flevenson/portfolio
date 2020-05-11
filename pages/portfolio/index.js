@@ -1,7 +1,14 @@
 import Head from 'next/head'
 import MainLayout from '../../components/mainlayout'
+import Project from '../../components/project'
+import Projects from '../../public/projects'
 
 export default function Home() {
+
+  const ProjectComponents = Projects.map(project => {
+    return <Project name={project.name} description={project.description} images={project.images} />
+  })
+
   return (
     <div className="container">
       <Head>
@@ -11,7 +18,7 @@ export default function Home() {
 
       <MainLayout />
       <main>
-          <p>Portfolio page not set up</p>
+          { ProjectComponents }
       </main>
 
       <style jsx>{`
