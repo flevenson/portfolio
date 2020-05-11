@@ -1,6 +1,6 @@
 export default function Project(props) {
 
-    const {name, description, images}
+    const {name, description, images} = props
 
     return(
         <div>
